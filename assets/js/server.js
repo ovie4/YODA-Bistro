@@ -16,14 +16,14 @@ var reservations = [];
 //accept path requests and direct to relevant html files (routes)
 app.get("/", function(req,res){
 	console.log("You hit the root");
-	res.sendFile(path.join(__dirname, "../../../index.html"));
+	res.sendFile(path.join(__dirname, "../../index.html"));
 
 });
 app.get("/view", function(req,res){
-	res.sendFile(path.join(__dirname, "../../../view.html"));
+	res.sendFile(path.join(__dirname, "../../view.html"));
 });
 app.get("/reserve", function(req,res){
-	res.sendFile(path.join(__dirname, "../../../reserve.html"));
+	res.sendFile(path.join(__dirname, "../../reserve.html"));
 });
 //accept api requests and return relevant json
 	//if POST api request, push new reservation to array
