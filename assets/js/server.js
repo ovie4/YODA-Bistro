@@ -19,7 +19,7 @@ var waitlist =[];
 app.get("/", function(req,res){
 	console.log("You hit the root");
 	res.sendFile(path.join(__dirname, "../../index.html"));
-	console.log(path.join(__dirname, "../../index.html"));
+
 
 });
 app.get("/view", function(req,res){
